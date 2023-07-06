@@ -50,6 +50,7 @@ img {
     align-items: baseline; 
     width: 1158px;  
     }
+ 
 .header-section {
     display: flex;
     border-bottom: 1px solid var(--border-portfolio-color);
@@ -821,4 +822,19 @@ color: var(--color-icons);
   .send-btn:focus {
 background: var(--active-color);
   }
- 
+  /* @media (min-width: 428px) {
+    .hero {
+      width: 428px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 72px;
+    }
+  
+    .element {
+      flex-basis: calc((100% - 216px) / 4);
+    }
+  } */
