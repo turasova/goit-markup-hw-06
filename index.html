@@ -11,13 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css"/>
     <title>WebStudio</title>
 </head>
 <body>
+  <!-- heder-section -->
 <header class="header-section">
         <div class="container header">
-        <nav class="nav-menu">
         <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
+        <nav class="nav-menu">
             <ul class="list link-header-menu">
             <li>
                 <a href="./index.html" class="link-header link active">Studio</a>
@@ -40,15 +42,22 @@
         </li>
     </ul>
     </address>
+    <button class="button-icon-burger">
+      <svg class="icon-burger" width="32" height="22">
+        <use href="./images/icons.svg#icon-hamburger"></use>
+      </svg>
+    </button>
 </div>
 </header>
 <main>
+  <!-- hero-section -->
     <section class="section hero-section">
     <div class="container hero">
  <h1 class="hero-title">Effective Solutions <br />for Your Business</h1>
  <button type="button" class="hero-button" data-modal-open>Order Service</button>
 </div>
  </section>
+ <!-- features-section -->
  <section class="section features">
     <div class="container">
     <h2 class="visually-hidden">Our features</h2>
@@ -93,6 +102,7 @@
  </ul>
 </div>
  </section>
+ <!-- project-section -->
  <section class="section project">
     <div class="container"> 
  <h2 class="secondary-title">What are we doing</h2>
@@ -109,6 +119,7 @@
  </ul>
 </div>
 </section>
+<!-- comando-section -->
 <section class="section comando">
     <div class="container">     
  <h2 class="secondary-title">Our Team</h2>
@@ -265,6 +276,7 @@
  </ul>
  </div>
 </section>
+<!-- customers-section -->
 <section class="section customers">
     <div class="container">
     <h2 class="secondary-title">Customers</h2>
@@ -315,7 +327,8 @@
 </div>
 </section>
 </main>
-<footer class="footer-section">
+<!-- footer-section -->
+ <footer class="footer-section">
     <div class="container footer"> 
       <div class="footer-logo-text">
        <a href="./index.html" class="logo link">Web<span class="logo-footer">Studio</span></a>
@@ -369,7 +382,8 @@
     </div>
 </div>
 </footer>
-<div class="backdrop is-hidden" data-modal>
+<!-- modal-window -->
+<!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal">
       <button type="button" class="modal-btn" data-modal-close>
         <svg class="icons-modal"  width="8" height="8">
@@ -428,7 +442,7 @@
         <button type="submit" class="send-btn">Send</button>
       </form>
   </div>
-</div>
+</div> -->
 <script
 defer
 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
