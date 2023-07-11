@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/media.css"/>
     <title>WebStudio</title>
 </head>
 <body>
@@ -42,7 +41,7 @@
         </li>
     </ul>
     </address>
-    <button class="button-icon-burger">
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="icon-burger" width="32" height="22">
         <use href="./images/icons.svg#icon-hamburger"></use>
       </svg>
@@ -51,12 +50,12 @@
 </header>
 <main>
   <!-- hero-section -->
-    <section class="section hero-section">
+    <!-- <section class="section hero-section">
     <div class="container hero">
  <h1 class="hero-title">Effective Solutions <br />for Your Business</h1>
  <button type="button" class="hero-button" data-modal-open>Order Service</button>
 </div>
- </section>
+ </section> -->
  <!-- features-section -->
  <section class="section features">
     <div class="container">
@@ -277,7 +276,7 @@
  </div>
 </section>
 <!-- customers-section -->
-<section class="section customers">
+<!-- <section class="section customers">
     <div class="container">
     <h2 class="secondary-title">Customers</h2>
     <ul class="list">
@@ -326,9 +325,9 @@
 </ul>
 </div>
 </section>
-</main>
+</main> -->
 <!-- footer-section -->
- <footer class="footer-section">
+ <!-- <footer class="footer-section">
     <div class="container footer"> 
       <div class="footer-logo-text">
        <a href="./index.html" class="logo link">Web<span class="logo-footer">Studio</span></a>
@@ -381,9 +380,9 @@
       </form>
     </div>
 </div>
-</footer>
+</footer> -->
 <!-- modal-window -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
       <button type="button" class="modal-btn" data-modal-close>
         <svg class="icons-modal"  width="8" height="8">
@@ -442,14 +441,78 @@
         <button type="submit" class="send-btn">Send</button>
       </form>
   </div>
-</div> -->
+</div>
+<!-- mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg class="icons-mobile"  width="8" height="8">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="mobile-menu-link">
+  <ul class="list mobile-menu">
+    <li>
+        <a href="./index.html" class="link-header link active">Studio</a>
+    </li>
+    <li>
+        <a href="./portfolio.html" class="link-header link">Portfolio</a>
+    </li>
+    <li>
+        <a href="" class="link-header link">Contacts</a>
+    </li>
+</ul>
+</div>
+<div class="mobile-menu-contact">
+  <ul class="list mobile-menu-contact"> 
+    <li>
+        <a href="tel:+110001111111" class="link-contact link tel">+11 (000) 111-11-11</a>
+    </li>
+    <li>
+      <a href="mailto:info@devstudio.com" class="link-contact link mail">info@devstudio.com</a>
+  </li>
+</ul>
+</div>
+<div class="mobile-menu-sosial">
+<ul class="list icons-comando-item">
+  <li class="icons-comando-list">
+      <a href="" target="_blank" class="link icons-comando-link">
+<svg class="icons-comando" width="16" height="16">
+  <use href="./images/icons.svg#icon-instagram"></use>
+</svg>
+      </a>
+  </li>
+  <li class="icons-comando-list">
+      <a href="" target="_blank" class="link icons-comando-link">
+<svg class="icons-comando" width="16" height="16">
+  <use href="./images/icons.svg#icon-twitter"></use>
+</svg>
+      </a>
+</li>
+<li class="icons-comando-list">
+  <a href="" target="_blank" class="link icons-comando-link"> 
+<svg class="icons-comando" width="16" height="16">
+  <use href="./images/icons.svg#icon-facebook"></use>
+</svg>
+  </a>
+</li>
+<li class="icons-comando-list">
+  <a href="" target="_blank" class="link icons-comando-link">   
+<svg class="icons-comando" width="16" height="16">
+  <use href="./images/icons.svg#icon-linkedin"></use>
+</svg>
+  </a>
+</li>
+</ul>
+</div>
+</div>
+
 <script
-defer
-src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-crossorigin="anonymous"
-></script>
-<script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
