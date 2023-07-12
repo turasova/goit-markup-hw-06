@@ -433,11 +433,15 @@ transition-property: background-color;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 72px;
+    /* gap: 24px; */
     justify-content: center;
     align-items: center;
     }
+    @media screen and (min-width:1158px) {
+        .list{
+            gap: 24px;
+        }
+     }    
 .link {
     text-decoration: none;
     transition-duration: 250ms;
@@ -581,9 +585,12 @@ transition-property: background-color;
 /* features-section */
 
     .features-menu {
-     width: 396px;
+     max-width: 396px;
     } 
-
+    .features-menu-item {
+    gap: 72px 24px;
+    
+    }
     @media screen and (min-width:768px) {
     .features-menu {
         max-width: 356px;
@@ -706,6 +713,14 @@ transition-property: background-color;
            
             }
     } 
+    .comando-list {
+        gap: 72px 24px;
+    }
+    @media screen and (max-width:768px) {
+        .comando-list {
+            gap: 72px;
+        }
+    }    
 .secondary-title {
     color: var(--secondary-color);
     font-size: 36px;
@@ -759,6 +774,7 @@ transition-property: background-color;
    
 }
 .icons-comando-item {
+    gap: 24px;
     justify-content: center;
     margin-top: 8px;
 }
@@ -770,8 +786,18 @@ transition-property: background-color;
 /* customer-section */
 
 .customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width:1158px) {
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+.customers-item {
+    gap: 72px 24px;
 }
 .customers-link {
     width: 100%;
@@ -817,9 +843,34 @@ transition-property: background-color;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+     }
+@media screen and (max-width:1158px) {
+.footer-section {
     padding-top: 100px;
     padding-bottom: 100px;
-     }
+        }
+    } 
+         
+@media screen and (max-width:1158px) {
+.footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+          }
+  }  
+  .footer {
+    display: flex;
+    align-items: baseline;
+   flex-direction: column;
+    
+         }   
+@media screen and (min-width:1158px) {
+    .footer {
+     flex-direction: row;          
+                      }
+              }   
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
@@ -833,16 +884,18 @@ transition-property: background-color;
     display: inline-block;
    
      }
-.footer {
-    display: flex;
-    align-items: baseline;
-     }
+
 .footer-logo-text {
     margin-right: 120px;
+    margin-bottom: 72px;
+    
      }
+
+
 .footer-section .logo {
   margin-bottom: 16px; 
   margin-right: 0;
+ 
 }
 .icons-footer {
     max-width: 24px;
@@ -889,6 +942,7 @@ transition-property: background-color;
 }
 .footer-form {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .footer-form-text {
@@ -1363,8 +1417,10 @@ background: var(--active-color);
 }
 
 .mobile-menu-contact {
-    display: block;
+    flex-direction: column;
+    align-items: start;
     margin-bottom: 48px;
+    gap: 40px;
    
 }
 .tel {
@@ -1373,6 +1429,7 @@ background: var(--active-color);
     line-height: 1.11;
     letter-spacing: 0.72px;
     color: var(--logo-color);
+  gap: 40px;
 }
 .mail {
     font-size: 20px;
