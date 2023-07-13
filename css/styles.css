@@ -997,11 +997,12 @@ img {
     background: var(--modal-fon);
     box-shadow:var(--box-shadow-modal);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px; 
+    padding: 72px 16px 24px 16px; 
  } 
 @media only screen and (min-width: 768px) {
 .modal {
     width: 408px;
+    padding: 72px 24px 24px 24px; 
   }
 }
 
@@ -1044,7 +1045,7 @@ img {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-   margin-bottom: 16px;
+    margin-bottom: 16px;
  }
 .form-container {
     width: 360px;
@@ -1269,6 +1270,7 @@ img {
     align-items: start;
     gap: 40px;
     margin-bottom: auto;
+    width: fit-content;
     
 }
 .icons-mobile {
