@@ -64,6 +64,8 @@ img {
 @media screen and (min-width:768px) {
 .container {
     max-width: 768px;
+    padding-right: 0;
+    padding-left: 0;  
     } 
 }
 /* Desktop-scren */
@@ -90,25 +92,31 @@ img {
     }
 @media screen and (min-width:1158px) {
 .nav-menu {
-    margin-right: 332px;
+    margin-right: auto;
                 } 
             }  
 
 .header {
-    max-width: 428px;
+    /* width: 428px; */
     display: flex;
     align-items: baseline; 
-    justify-content: space-between;
+    
     }
+@media screen and (min-width:320px) and (max-width:767.98px) {
+.header {
+    justify-content: space-between;
+     } 
+        }    
+
 @media screen and (min-width:768px) {
 .header {
-    max-width: 768px;
+    /* width: 768px; */
     align-items: center;
           } 
             }
 @media screen and (min-width:1158px) {
 .header {
-    max-width: 1158px;
+    /* max-width: 1158px; */
          } 
      }       
 .header-section {
@@ -157,10 +165,13 @@ img {
     align-items: center;
     }
 @media screen and (min-width:1158px) {
-        .list{
-            gap: 24px;
+.list{
+    gap: 24px;
         }
-     }    
+.heder-link-desktop {
+    gap: 40px;
+}
+}           
 .link {
     text-decoration: none;
     transition-duration: 250ms;
@@ -188,7 +199,7 @@ img {
 @media only screen and (min-width: 768px) {
 .heder-link-tablet {
     display:flex;
-    gap: 24px;
+    gap: 40px;
     flex-wrap: nowrap;
   }
 
@@ -241,8 +252,13 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
     transition-property: color;
-      } 
+      }  
         } 
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+.link-contact-tablet {
+    margin-bottom: 12px;
+    }     
+}        
 
  @media screen and (min-width:1158px) {
 .link-contact  {
@@ -664,7 +680,12 @@ img {
          
 .footer {
     text-align: center;
-         }   
+         }
+@media only screen and (min-width: 768px) and (max-width:1157.98px) {
+.footer  {
+    width: 584px;
+  }
+}            
 @media screen and (min-width:768px) {
 .footer {
     display: flex;
@@ -713,8 +734,8 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
 .footer-section {
-    padding-left: 108px;
-    padding-right: 164px;
+    /* padding-left: 108px;
+    padding-right: 164px; */
   }
 }
 .icons-footer {
