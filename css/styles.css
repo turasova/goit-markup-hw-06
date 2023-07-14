@@ -971,9 +971,15 @@ img {
     overflow: hidden;
 }
 .portfolio-img {
+    max-width: 288px;
+    height: auto;
+}
+@media only screen and (min-width: 428px) {
+    .portfolio-img {
     max-width: 396px;
     max-height: 280px;
-}
+      }
+    }
 
 @media only screen and (min-width: 768px) {
 .portfolio-img {
